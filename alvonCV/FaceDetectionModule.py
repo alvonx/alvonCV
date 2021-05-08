@@ -22,10 +22,8 @@ class FaceDetector:
                        int(bboxC.width * iw), int(bboxC.height * ih)
                 bboxs.append([id, bbox, detection.score])
 
-                right_eye = (detection.location_data.relative_keypoints[0].x * iw, detection.location_data.relative_keypoints[0].y*ih)
                 if draw:
                     self.fancyBBoxDraw(img, bbox)
-                    cv2.circle(img, (int(right_eye[0]), int(right_eye[1])), 1, (0, 0, 255), 1)
                     cv2.putText(img, f'Score: {int(detection.score[0] * 100)}', (bbox[0], bbox[1] - 20),
                                 cv2.FONT_HERSHEY_PLAIN, 2, (255, 0, 255), 2)
 
