@@ -1,0 +1,13 @@
+LICENCE.txt
+README.md
+setup.cfg
+setup.py
+alvonCV/FaceDetectionModule.py
+alvonCV/FaceMeshModule.py
+alvonCV/HandTrackingModule.py
+alvonCV/__init__.py
+alvonCV.egg-info/PKG-INFO
+alvonCV.egg-info/SOURCES.txt
+alvonCV.egg-info/dependency_links.txt
+alvonCV.egg-info/requires.txt
+alvonCV.egg-info/top_level.txt
